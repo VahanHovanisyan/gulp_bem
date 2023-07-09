@@ -13,7 +13,7 @@ export default {
     },
     dest:{
         files:      destFolder + "files/",
-        html:        destFolder,
+        html:       destFolder,
         sass:       destFolder + "css/",
         js:         destFolder + "js/",
         img:        destFolder + "img/",
