@@ -1,4 +1,4 @@
-import del from "del";
+import del from "del"
 
 // clean
 export default () => {
