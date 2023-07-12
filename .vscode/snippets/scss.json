@@ -16,13 +16,13 @@
 	},
 	"magic animation": {
 		"scope": "scss",
-		"prefix": "a",
+		"prefix": "animation",
 		"body": "animation: name 1s ease infinite alternate 0s forwards;",
 		"description": "animation"
 	},
 	"transform-universal": {
 		"scope": "scss",
-		"prefix": "t",
+		"prefix": "transform",
 		"body": "transform: translate(0, 0) scale(1, 1) rotate( 0deg) skew(0deg, 0deg);",
 		"description": "transform-universal"
 	},
