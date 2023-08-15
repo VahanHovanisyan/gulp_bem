@@ -1,6 +1,6 @@
 @mixin burger-custom($width, $height, $height-line, $color-line, $visible-when) {
 	.burger {
-		display: none;
+		display: inline-flex;
 		border: none;
 		padding: 0;
 		width: $width;
@@ -18,15 +18,15 @@
 			transition: all 0.3s ease-in-out;
 		}
 		@content;
-		@media (max-width: $visible-when) {
-			display: inline-flex;
+		@media (min-width: $visible-when) {
+			display: none;
 		}
 	}
 }
 
 @mixin burger-X($width, $height, $height-line, $color-line, $visible-when) {
 	.burger {
-		display: none;
+		display: inline-flex;
 		border: none;
 		padding: 0;
 		width: $width;
@@ -61,8 +61,8 @@
 				}
 			}
 		}
-		@media (max-width: $visible-when) {
-			display: inline-flex;
+		@media (min-width: $visible-when) {
+			display: none;
 		}
 	}
 }

@@ -34,45 +34,39 @@
 	},
 	"media 1440px": {
 		"scope": "scss",
-		"prefix": "7",
+		"prefix": "6",
 		"body": "@media(max-width:1440px){$1}",
 		"description": "media 1440px"
 	},
-	"media 1199px": {
-		"scope": "scss",
-		"prefix": "6",
-		"body": "@media(max-width:1199px){$1}",
-		"description": "media 1199px"
-	},
-	"media 1024px": {
+	"Extra large devices": {
 		"scope": "scss",
 		"prefix": "5",
-		"body": "@media(max-width:1024px){$1}",
-		"description": "media 1024px"
+		"body": "@media(min-width:1200px){$1}",
+		"description": "Extra large devices (large desktops, 1200px and up)"
 	},
-	"media 991px": {
+	"Large devices": {
 		"scope": "scss",
 		"prefix": "4",
-		"body": "@media(max-width:991px){$1}",
-		"description": "media 991px"
+		"body": "@media(min-width:992px){$1}",
+		"description": "Large devices (desktops, 992px and up)"
 	},
-	"media 767px": {
+	"Medium devices": {
 		"scope": "scss",
 		"prefix": "3",
-		"body": "@media(max-width:767px){$1}",
-		"description": "media 767px"
+		"body": "@media(min-width:768px){$1}",
+		"description": "Medium devices (tablets, 768px and up)"
 	},
-	"media 576px": {
+	"Small devices": {
 		"scope": "scss",
 		"prefix": "2",
-		"body": "@media(max-width:576px){$1}",
-		"description": "media 576px"
+		"body": "@media(min-width:576px){$1}",
+		"description": "Small devices (landscape phones, 576px and up)"
 	},
-	"media 479px": {
+	"Extra small": {
 		"scope": "scss",
 		"prefix": "1",
-		"body": "@media(max-width:479px){$1}",
-		"description": "media 479px"
+		"body": "@media(max-width:575.98px){$1}",
+		"description": "Extra small devices (portrait phones, less than 576px)"
 	},
 	"внешний отступ": {
 		"scope": "scss",

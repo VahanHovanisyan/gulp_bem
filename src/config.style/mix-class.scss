@@ -46,8 +46,8 @@
 }
 
 .img {
-	height: auto;
 	max-width: 100%;
+	height: auto;
 	object-fit: cover;
 }
 
@@ -95,6 +95,7 @@
 
 .link {
 	text-decoration: none;
+	color: inherit;
 }
 
 .is-hidden {
