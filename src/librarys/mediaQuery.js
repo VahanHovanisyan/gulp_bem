@@ -1,27 +1,22 @@
-const mediaQueryMaxWidth_991 = window.matchMedia('(max-width: 991px)');
-mediaQueryMaxWidth_991.addEventListener("change", (e) => {
-	if (e.matches) {
-		return true;
+class MediaQueryHandler {
+	constructor(options) {
+			let defaultOptions = {
+					width: 'min',
+					breakpoint: 768,
+					trueChange: () => { },
+					falseChange: () => { },
+			};
+
+			this.options = Object.assign(defaultOptions, options);
+			this.mediaQuery = window.matchMedia(`(${this.options.width}-width: ${this.options.breakpoint}px)`);
+			this.mediaQuery.addEventListener("change", this.handleMediaChange.bind(this));
 	}
-	return false;
-});
 
-
-
-const mediaQueryMaxWidth_767 = window.matchMedia('(max-width: 767px)');
-mediaQueryMaxWidth_767.addEventListener("change", (e) => {
-	if (e.matches) {
-		return true;
+	handleMediaChange(event) {
+			if (event.matches) {
+					this.options.trueChange(this);
+			} else {
+					this.options.falseChange(this);
+			}
 	}
-	return false;
-});
-
-
-
-const mediaQueryMaxWidth_479 = window.matchMedia('(max-width: 479px)');
-mediaQueryMaxWidth_479.addEventListener("change", (e) => {
-	if (e.matches) {
-		return true;
-	}
-	return false;
-});
+}

@@ -1,8 +1,9 @@
 
 
-const blockLockScroll = document.body;
+// const blockLockScroll = document.body;
 export const scrollController = {
 	scrollPosition: 0,
+	blockLockScroll: document.body,
 	lockScroll() {
 		scrollController.scrollPosition = window.scrollY;
 		let lockPadding = window.innerWidth - blockLockScroll.offsetWidth;
