@@ -1,1 +1,0 @@
-import Rellax from "rellax";

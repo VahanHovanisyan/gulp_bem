@@ -1,1 +1,0 @@
-import Simplebar from "simplebar";

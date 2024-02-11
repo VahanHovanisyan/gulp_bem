@@ -1,5 +1,0 @@
-@mixin hover-none {
-	@media (pointer: coarse) {
-			@content;
-	}
-}
